@@ -1,0 +1,125 @@
+.nav_container .nav-link {
+  color: var(--color-white-) !important;
+}
+
+.nav_container .nav-item::after,
+.nav_container .hamburger .bar {
+  background-color: var(--color-white-);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+  margin: 20px;
+}
+
+.hero-header.contact-us {
+  background: linear-gradient(rgb(0, 0, 0), rgba(93, 74, 74, 0.045)), url(../img/board.webp) center center/cover;
+}
+
+.branch {
+  color: var(--color-white--);
+  padding: 4px 10px;
+  width: 100%;
+}
+
+.branch p {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 5px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.input-group input {
+  height: 50px;
+  color: var(--color-white-);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border: 2px solid var(--color-primary1-);
+  outline: none;
+  background-color: var(--color-white-);
+  color: var(--color-primary1-);
+  padding: 0.5rem 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-white-);
+}
+
+button {
+  background-color: var(--color-white-);
+  display: block;
+  width: 150px;
+  margin: auto;
+  color: var(--color-primary1-);
+  height: 40px;
+  font-size: 1rem;
+  border: 2px solid var(--color-primary1-);
+  transition: var(--transition-);
+}
+
+button:hover {
+  color: var(--color-white-);
+  background-color: var(--color-primary1-);
+  cursor: pointer;
+}
+
+.branch-contact-info {
+  /* ... Other styles ... */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  gap: 1rem;
+}
+
+@media screen and (min-width:758px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-areas: "area1" "area2";
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .branch-contact-info {
+    background-color: transparent;
+    grid-area: area1;
+  }
+.branch p{
+     justify-content: left;
+}
+  .contact-form {
+    width: 100%;
+  }
+
+  .input_box {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .input_box .input-group {
+    width: 50%;
+  }
+}
